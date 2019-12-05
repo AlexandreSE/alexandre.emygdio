@@ -1,0 +1,15 @@
+// Hello World!
+
+int LED = 13; // led pin 
+int SENSOR = 7; // Pin that will receive the phototransistor signal
+int valor;
+void setup() { 
+pinMode(LED, OUTPUT); 
+pinMode(SENSOR, INPUT); 
+} 
+void loop() { 
+//Obter o valor do sensor, LOW ou HIGH 
+valor = digitalRead(SENSOR); 
+digitalWrite(LED, valor); 
+delay (100); 
+} 
